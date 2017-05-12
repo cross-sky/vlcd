@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AllTests.cpp" />
+    <ClCompile Include="user\hw_button_Tes.cpp">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="user\que_Test.cpp">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="user\uart1_Test.cpp">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="user\menu_Test.cpp">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="user\spy.c">
+      <Filter>bsp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AllTests.h" />
+    <ClInclude Include="user\spy.h">
+      <Filter>bsp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="user">
+      <UniqueIdentifier>{2643d85c-e5e8-439a-8116-5f4e6ebc82b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bsp">
+      <UniqueIdentifier>{82f8048c-bef2-4733-81aa-5531752e9433}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
