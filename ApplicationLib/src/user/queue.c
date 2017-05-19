@@ -1,7 +1,7 @@
 #include "queue.h"
 #include <stdlib.h>
 
-bool QUE_push(QUELink_T *q, uint8_t *addres_8u, uint8_t length)
+bool QUE_push(QUELink_T *q, uint16_t addres_8u, uint16_t length)
 {
 	P_QUENode s = (P_QUENode)malloc(sizeof(QUENode_T));
 	if (!s)
@@ -56,8 +56,10 @@ QUELink_T* Queue_create(void)
 
 void Queue_destory(QUELink_T *link)
 {
+	//应该逐个释放里面的元素，@@@@@@
 	if (link != NULL)
 	{
+		free(link->front);
 		free(link);
 	}
 }

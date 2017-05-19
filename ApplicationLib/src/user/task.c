@@ -5,11 +5,12 @@
 
 TPC_TASK TaskComps[]=
 {
-	{0, 0, 301,  201, LED1on},			// 5*200=1s   ok	
-	{0, 0, 301, 301, GLCD_refresh},		//lcd refrech
+	{0, 0, 301,  301, LED1on},			// 5*200=1s   ok	
+	{0, 0, 101, 101, GLCD_refresh},		//lcd refrech
 	{0, 0, 15,  15, BTN_taskCheckKey},  //btn task
-	{0, 0, 4,  4, Menu_process},
-//	{0, 0, 4,  4, UartDmaSendV2},
+	{0, 0, 15,  15, Menu_process},		//menu
+	{0, 0, 100,  100, Uart1_taskProces},		//uart1 Uart1_sendTest
+//	{0, 0, 500,  500, Uart1_sendCodeA},
 };
 
 
@@ -25,6 +26,8 @@ void TaskInit(void)
 
 	GLCD_init();
 	BTN_init();
+	Uart1_init();
+	Menu_initPara();
 	//@@@@@@@@@显示板要延时一点才启动，不过也没关系，后面有重发
 }
 
@@ -59,7 +62,6 @@ void TPCProcess(TPC_TASK *pTask)
 			pTask[i].TaskHook();
 			pTask[i].Run = TPC_RUN_CLM;
 		}
-
 	}
 }
 

@@ -36,6 +36,8 @@ typedef enum
 	TASK_LCD128,
 	TASK_BTN,
 	TASK_MENU,
+	TASK_UART1,
+//	TASK_uart1Test,
 	TASKS_MAX
 } TASK_LIST;
 

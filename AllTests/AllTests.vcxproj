@@ -150,6 +150,7 @@
     <ClCompile Include="user\hw_button_Tes.cpp" />
     <ClCompile Include="user\menu_Test.cpp" />
     <ClCompile Include="user\que_Test.cpp" />
+    <ClCompile Include="user\RingBUff_Test.cpp" />
     <ClCompile Include="user\spy.c" />
     <ClCompile Include="user\uart1_Test.cpp" />
   </ItemGroup>

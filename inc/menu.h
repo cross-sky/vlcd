@@ -7,5 +7,7 @@ extern const char* LcdOffStr;
 
 void Menu_process(void);
 
-#endif
+uint8_t Menu_getOnFlag(void);
+void Menu_initPara(void);
 
+#endif

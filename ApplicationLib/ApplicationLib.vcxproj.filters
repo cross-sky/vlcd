@@ -13,14 +13,28 @@
     <ClCompile Include="src\user\except.c">
       <Filter>user</Filter>
     </ClCompile>
-    <ClCompile Include="src\user\queue.c" />
-    <ClCompile Include="src\user\uart1.c" />
-    <ClCompile Include="src\user\graphics.c" />
     <ClCompile Include="src\user\st7587.c">
       <Filter>user</Filter>
     </ClCompile>
-    <ClCompile Include="src\user\menu.c" />
     <ClCompile Include="src\user\task.c">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\stm32f10x_it.c">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\graphics.c">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\uart1.c">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\menu.c">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\queue.c">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\ringbuff.c">
       <Filter>user</Filter>
     </ClCompile>
   </ItemGroup>

@@ -28,3 +28,13 @@ void GRA_drawStr(const char *str, uint8_t col, uint8_t page)
 	*ptr = '\0';
 
 }
+
+void Uart1_DmaTxDataEnable(uint16_t len, uint8_t *address)
+{
+
+}
+
+void Uart1_sendCodeA(void)
+{
+
+}

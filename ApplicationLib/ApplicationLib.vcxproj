@@ -107,7 +107,9 @@
     <ClCompile Include="src\user\hw_button.c" />
     <ClCompile Include="src\user\menu.c" />
     <ClCompile Include="src\user\queue.c" />
+    <ClCompile Include="src\user\ringbuff.c" />
     <ClCompile Include="src\user\st7587.c" />
+    <ClCompile Include="src\user\stm32f10x_it.c" />
     <ClCompile Include="src\user\stm32_ub_led.c" />
     <ClCompile Include="src\user\task.c" />
     <ClCompile Include="src\user\uart1.c" />

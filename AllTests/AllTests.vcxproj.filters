@@ -17,6 +17,9 @@
     <ClCompile Include="user\spy.c">
       <Filter>bsp</Filter>
     </ClCompile>
+    <ClCompile Include="user\RingBUff_Test.cpp">
+      <Filter>user</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AllTests.h" />

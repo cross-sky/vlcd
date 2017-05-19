@@ -26,9 +26,9 @@ TEST(QUE_TEST, pushAndPop)
 	uint16_t src = 16, dst=0;
 	QUENode_T tnode;
 	P_QUELink queLink = Queue_create();
-	QUE_push(queLink, (uint8_t*)&src, sizeof(uint16_t));
+	QUE_push(queLink, src, sizeof(uint16_t));
 	QUE_popNode(queLink, &tnode);
-	memcpy(&dst, tnode.Addr_8U, tnode.length);
-	LONGS_EQUAL(src, dst);
+	//memcpy(&dst, tnode.Addr_8U, tnode.length);
+	LONGS_EQUAL(src, tnode.Addr_8U);
 	Queue_destory(queLink);
 }
